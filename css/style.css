@@ -1,0 +1,170 @@
+html{font-family: 'Bebas Neue', cursive; color: white; background-color: black; margin: 0; padding: 0;}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    display: flex;
+    background-color: black;
+    justify-content: space-between;
+}
+.titulo{
+    font-size: 80px;
+    padding: 10px;
+    
+}
+
+nav{
+    font-size: 25px;
+    display: flex;
+    gap: 20px;
+    padding: 40px;
+    align-items: center;
+}
+
+.listaBarra{
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    font-size: 35px;
+    gap: 80px;
+    
+
+}
+ul li a{
+    color: white;
+}
+.titulo{
+    
+    background-color: rgba(87, 125, 134, 1);
+    display: flex
+    font-size: 60px;
+}
+.pelisRecomendados{
+    background-color: rgba(22, 28, 27, 1);
+    padding-left: 20px;
+    margin: 30px;
+    display: grid;
+    grid-template-columns: 35% 75% ;
+    grid-template-rows: 20% 40% 40%;
+    grid-template-areas: 
+    "titulopeli img"
+    "titulomario img"
+    "marioparrafo img";
+    row-gap: 20px;
+    column-gap: 20px;
+    height: 700px;
+}
+
+.titulopeli{
+    font-size: 60px;
+    grid-area: titulopeli;
+    margin: 20px;
+    letter-spacing: 5px;
+}
+.fotomariotitulo{
+    
+    padding-left: 100px;
+    padding-bottom: 20px;
+    grid-area: titulomario;
+    
+}
+.mario{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    width: 80%;
+    height: 700px;
+    padding: 15px;
+
+}
+
+
+.parrafoMario{
+    grid-area: marioparrafo;
+    font-size: 30px;
+    word-spacing: 5px;
+}
+.estrenosTitulo{
+    font-size: 30px;
+    padding: 20px;
+    
+}
+.estrenos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: rgba(87, 125, 134, 1);
+    height: 300px;
+    align-items: center;
+    margin: 30px;
+    
+}
+.tuListaTitulo{  
+    font-size: 30px;
+    padding: 20px;
+}
+.tuLista{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: rgba(87, 125, 134, 1);
+    margin: 30px;
+    height: 700px;
+    align-items: center;
+    
+}
+.imglista{
+    object-fit: cover;
+    width: 400px;
+    height: 600px;
+}
+.tendenciasTitulo{
+    padding: 20px;
+    font-size: 30px;
+    
+}
+
+.tendencias{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: rgba(87, 125, 134, 1);
+    margin: 30px;
+    
+}
+.clasicosTitulo{
+    font-size: 30px;
+    padding: 20px;
+}
+.clasicos{    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: rgba(87, 125, 134, 1);
+    margin: 30px;
+}
+.estrenosTitulo{
+    font-size: 30px;
+    padding: 20px;
+}
+.proximosEstrenos{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(87, 125, 134, 1);
+    margin: 30px;
+}
+
+.footer{
+    font-size: 30px;
+    display: flex;
+    list-style-type: none;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: rgba(87, 125, 134, 1);
+    margin-top: 50px;
+    padding: 20px;
+}
