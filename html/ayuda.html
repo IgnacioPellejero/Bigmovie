@@ -13,14 +13,15 @@
 </head>
 <body>
     <header>
-        <a href="../index.html"><h1 class="titulo">BIGmovie!</h1></a>
+        <a href="../index.html"><h1 class="titulo1">BIGmovie!</h1></a>
         <nav>
-            <form class="buscar">
-                <input type="text">
-                <button type="submit">buscar</button>
+            <form>
+                <input type="text" class="form__inputnav">
+                <button type="submit" class="form__submitnav">buscar</button>
             </form>
             
             <ul class="listaBarra">
+                <li><img src="./assent/img/lupa.png" alt="" class="lupa"></li>
                 <li><a href="comunidad.html">comunidad</a></li>
                 <li><a href="categorias.html">categorias</a></li>
                 <li><a href="">pelis</a></li>
@@ -29,29 +30,30 @@
             </ul>   
         </nav>
     </header>
-    <main>
+    <main class="ayudamain">
         <figure>
-            <img src="../assent/img/rick.jpeg" alt="rick">
+            <img src="../assent/img/rick.jpeg" alt="rick" class="rickimg">
         </figure>
         <section>
-            <fieldset>
-                <legend>ayuda</legend>
-                <label for="comoayudo">comentanos en que te podemos ayudar</label>
-                <input type="text" id="comoayudo">
-                <label for="mail">correo electronico</label>
-                <input type="email" id="mail">
-                <label for="servicio">comentanos que te parece nuestro servicio</label>
-                <input type="text" id="servicio">
-            </fieldset>
-            <h3>¡muchas gracias por ayudarnos a crecer!</h3>
+            <h2 class="tituloayuda">ayuda</h2>
+            <form class="form1">
+                <label for="comoayudo" class="labelayuda">comentanos en que te podemos ayudar</label>
+                <input type="text" id="comoayudo" class="inputayuda">
+                <label for="mail" class="labelayuda">correo electronico</label>
+                <input type="email" id="mail" class="inputayuda">
+                <label for="servicio" class="labelayuda">comentanos que te parece nuestro servicio</label>
+                <input type="text" id="servicio" class="inputayuda"> 
+                <button type="submit" class="ayudaboton">enviar</button>
+            </form>
+            <h3 class="tituloayuda">¡muchas gracias por ayudarnos a crecer!</h3>
         </section>
         <figure>
-            <img src="../assent/img/rick.jpeg" alt="rick">
+            <img src="../assent/img/rick.jpeg" alt="rick" class="rickimg">
         </figure>
 
         </main>
         <footer>
-            <div><ul>
+            <div><ul class="footer">
                 <li><a href="https://www.instagram.com/nacho_pellejero/" target="_blank">instagram</a></li>
                 <li><a href="https://www.facebook.com/nacho.pellejero/"target="_blank" >facebook</a></li>
                 <li><a href="https://twitter.com/PellejeroNacho" target="_blank">twitter</a></li>

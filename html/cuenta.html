@@ -12,14 +12,15 @@
 </head>
 <body>
     <header>
-        <a href="../index.html"><h1 class="titulo">BIGmovie!</h1></a>
+        <a href="../index.html"><h1 class="titulo1">BIGmovie!</h1></a>
         <nav>
             <form class="buscar">
-                <input type="text">
-                <button type="submit">buscar</button>
+                <input type="text"class="form__inputnav" >
+                <button type="submit" class="form__submitnav">buscar</button>
             </form>
             
             <ul class="listaBarra">
+                <li><img src="./assent/img/lupa.png" alt="" class="lupa"></li>
                 <li><a href="comunidad.html">comunidad</a></li>
                 <li><a href="categorias.html">categorias</a></li>
                 <li><a href="">pelis</a></li>
@@ -28,54 +29,64 @@
             </ul>   
         </nav>
     </header>
-    <main>
-        <section>
+    <main class="maincuenta">
+        <section class="cuenta">
             <figure>
-                <img src="../assent/img/dwightcopia.jpeg" alt="dwightcopia">
+                <img src="../assent/img/dwightcopia.jpeg" alt="dwightcopia" class="imgcuenta">
             </figure>
-            <div>
+            <div >
                 
-                <form action="">
-                    <fieldset>
-                        <legend>cuenta</legend>
-                        <label for="usuario1">usuario</label>
-                        <input type="text" id="usuario1">
-                        <label for="contraseña1">contraseña</label>
-                        <input type="password" id="contraseña1">
-                        <input type="button" value="iniciar sesion">
-                        <a href="">recuperar contraseña</a>
-                    </fieldset>
+                
+                <form >
+                    <h2 class="form__titulo">iniciar sesion</h2>
+                    <div class="form__contenedor1">
+                        <div class="form__grupo">
+                            <label for="usuario1" class="form__label" >usuario</label>
+                            <input type="text" id="usuario1" class="form__input">
+                            <label for="contraseña1" class="form__label">contraseña</label>
+                            <input type="password" id="contraseña1" class="form__input">
+                            <input type="submit" value="iniciar sesion" class="form__submit">
+                            <a href="" class="recuperar">recuperar contraseña</a>
+                            
+                        </div>
+                    </div>
                 </form>
                 <figure>
-                    <img src="../assent/img/fuerza.png" alt="fuerzaOffice">
+                    <img src="../assent/img/fuerza.png" alt="fuerzaOffice" class="imgcuenta1">
                 </figure>
             </div>
         </section>
-        <section>
+
+        <section class="cuenta">
             <div>
-                    <figure>
-                        <img src="../assent/img/halper.jpeg" alt="halper">
-                    </figure>
-                <fieldset>
-                    <legend>crear cuenta</legend>
-                    <label for="correo">correo electronico</label>
-                    <input type="email" id="correo">
-                    <label for="usuario2">nombre de usuario</label>
-                    <input type="text" id="usuario2">
-                    <label for="password2">contraseña</label>
-                    <input type="password" id="password2">
-                    <label for="repetirpass">repetir contraseña</label>
-                    <input type="password" id="repetirpass">
-                    <input type="button" value="bienvenido">
-                </fieldset>
                 <figure>
-                    <img src="../assent/img/dwightMascara.jpeg" alt="">
+                    <img src="../assent/img/halper.jpeg" alt="halper" class="imgcuenta">
+                </figure>
+                <form class="form">
+                    <h2 class="form__titulo">crear cuenta</h2>
+                    <div class="form__contenedor">
+                        <div class="form__grupo">
+                            <label for="correo" class="form__label">correo electronico</label>
+                            <input type="email" id="correo" class="form__input">
+                            <label for="usuario2" class="form__label">nombre de usuario</label>
+                            <input type="text" id="usuario2" class="form__input">
+                            <label for="password2" class="form__label" >contraseña</label>
+                            <input type="password" id="password2"class="form__input" >
+                            <label for="repetirpass" class="form__label">repetir contraseña</label>
+                            <input type="password" id="repetirpass"class="form__input" >
+                            <input type="submit" value="bienvenido" class="form__submit">
+                            
+                        </div>
+                    </div>
+                </form>
+                <figure>
+                    <img src="../assent/img/dwightMascara.jpeg" alt="" class="imgcuenta2">
                 </figure>
             </div>
         </section>
     </main>
     <footer>
-        <div><ul>
+        <div><ul class="footer">
                 <li><a href="https://www.instagram.com/nacho_pellejero/" target="_blank">instagram</a></li>
                 <li><a href="https://www.facebook.com/nacho.pellejero/"target="_blank" >facebook</a></li>
                 <li><a href="https://twitter.com/PellejeroNacho" target="_blank">twitter</a></li>
