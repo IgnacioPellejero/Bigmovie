@@ -25,7 +25,7 @@ header{
     background-color: #72329c;
     display: flex ;
 }
-
+.navmobile{display: none;}
 nav{
     font-size: 25px;
     display: flex;
@@ -70,14 +70,15 @@ ul li a{
     padding-left: 20px;
     margin: 30px;
     display: grid;
-    grid-template-columns: 35% 75% ;
+    grid-template-columns: 30% 70% ;
     grid-template-rows: 20% 40% 40%;
     grid-template-areas: 
-    "titulopeli img img"
-    "titulomario img img"
-    "marioparrafo img img";
+    "titulopeli img "
+    "titulomario img "
+    "marioparrafo img ";
     row-gap: 20px;
     column-gap: 20px;
+    padding: 20px;
     
 }
 
@@ -88,20 +89,22 @@ ul li a{
     letter-spacing: 5px;
 }
 .fotomariotitulo{
-    
     padding-left: 100px;
     padding-bottom: 20px;
     grid-area: titulomario;
     
 }
 
-.mario{
-
+.mario{    grid-area: img;
+    width: 100%;
+    padding: 10px;
+    
 
 }
 .marioimg{
 grid-area: img;
-width:100%;
+width: 100%;
+padding: 10px;
 
 }
 
@@ -144,12 +147,13 @@ width:100%;
     align-items: center;
     
 }
-.imglista{
+.imglistas2{
     object-fit: cover;
-    width: 400px;
-    height: 600px;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.836);
+    
+    height: 350px;
 }
+
+
 .tendenciasTitulo{
     padding: 20px;
     font-size: 30px;
@@ -234,6 +238,7 @@ width:100%;
 
 }
 .noti{
+    
     background-color: #72329c;
     padding: 20px;
     width: 400px;
@@ -419,17 +424,35 @@ width:100%;
     justify-content: center;
     
 }
+.imgcomuni{
+    width: 100%;
+}
+
 @media (max-width:1589px){
     .form__submitnav{display: none;}
     .listaBarra{
         gap: 20px;
     }
-
+    .mario{
+        margin-top: 50px;
+    }
+    .imglistas2{
+        
+        width: 350px;
+    }
 }
-@media(max-width:1024px)
-{
+@media(max-width:1024px){
+    header{
+        height: 95px;
+    }
+    .titulo{
+        font-size: 50px;
+    }
+    .titulo1{
+        font-size: 50px;
+    }
     .listaBarra{ font-size:25px;
-    gap: 10px;
+    gap: 20px;
     }
     
     .form__inputnav{
@@ -437,7 +460,6 @@ width:100%;
     }
     .pelisRecomendados{
         display: grid;
-
         grid-template-columns: 50% 50%;
         grid-template-rows: 10% 70%;
         grid-template-areas: 
@@ -447,17 +469,12 @@ width:100%;
         gap: 0;
     }
     .marioimg{
-
         grid-area: img;
         margin-top: 30px;
     }
-
     .parrafoMario{
-display: none;
-
-    }
-    .titulopeli{grid-area: titulopeli;
-        
+    display: none;}
+    .titulopeli{grid-area: titulopeli;    
     }
     .fotomariotitulo{display: none;}
     .estrenos{
@@ -469,16 +486,30 @@ display: none;
         
     }
     .imglistas1{display: none;}
-
+    
     .imglista{
         width: 300px;
     }
-}  
+    .imglistas2{
+        object-fit: cover;
+        width: 280px;
+        height: 600px;
+    }
+    .noticias{
+        gap: 20px;
+    }
+    .noti{
+        width: 100%;
+        
+        
+    }
+
+}
+
 
 
 @media(max-width:768px){
     header{
-        display: flex;
         flex-direction: column;
         align-items: center;
     }
@@ -490,17 +521,165 @@ display: none;
     .lupa{
         display: block;
         width: 40px;
+        
     }
     .lupa:hover{
         width: 60px;
     }
-    .mario{
-        height: 100%;
+
+    .imglistas{
+        width: 220px;
+        height: 150px;
+    }
+    .imglistas1{display: none;}
+    .imglistas2{
+        width: 200px;
+        height: 300px;
+    }
+    .tuLista{
+        height: 400px;
+        padding: 20px;
     }
 
+}
 
+    @media (max-width:425px) {
+        .titulo{
+            font-size: 30px;
+            
+            }
+        .titulo1{
+            font-size: 25px;
+        }
+        .listaBarra{
+            font-size: 20px;
+            }
+    .lupa{
+        width: 25px;
+    }
 
+    .headermobile{
+        display: flex;
+        gap: 90px;
+    }
+    .navmobile{display: flex;
+    list-style-type: none;
+    align-items: center;
+    font-size: 20px;
+    gap: 10px;
+    }
+    nav{
+        padding: 15px;
+        
+    }
 
+    .listaBarra{
+        gap: 40px;
+    }
+    .itemmobile{display: none;}
+    .titulopeli{
+        font-size: 35px;
+    }
+    .pelisRecomendados{
+        height: 350px;
+        padding: 0;
+    }
+    .estrenosTitulo{
+        font-size: 20px;
+        padding: 5px;
+    }
+    .estrenos{
+        height: 150px;
+        margin: 8px;
+        
+    }
+    .imglistas{
+        object-fit: cover;
+        width: 100px;
+        height: 100px;
+    }
+    .tuListaTitulo{
+        font-size: 20px;
+        padding: 5px;
+    }
+    .tuLista{
+        margin: 8px;
+        padding: 2px;
+        height: 380px;
+        padding: 5px;
+    }
+    .imglistas2{
+        width: 100px;
+        height: 350px;
+    }
+    .tendenciasTitulo{
+        font-size: 20px;
+        padding: 5px;
+    }
+    .fuego{
+        width: 20px;
+    }
+    .tendencias{
+        height: 150px;
+        margin: 8px;
+        
+    }
+    .clasicosTitulo{
+        font-size: 20px;
+        padding: 5px;
+    }
+    .clasicos{
+        height: 150px;
+        margin: 8px;
+    }
+    .estrenosTitulo{
+        font-size: 20px;
+        padding: 5px;
+    }
+    .proximosEstrenos{
+        height: 150px;
+        margin: 8px;
+    }
+    .footer{
+        font-size: 15px;
+    }
+    .imglistas1{
+        padding: 0;
+        margin: 0;
+    }
+    .itemweb{
+        display: none;
+    }  
+    .noticias{
+        margin: 10px;
+        gap: 5px;
+        padding: 5px;
+    }
+    .noti{
+        width: 100px;
+        padding: 5px;
+    }
+    .voto{font-size: 18px;}
+    .imginfo{display: none;}
+    .comuTitulo{font-size: 15px;}
+    .corazon{
+        width: 30px;
+    }
 
+}
 
+@media (max-width:320px) {
+    .headermobile{
+    gap: 10px;
+    }
+    .imglistas2{
+        width: 80px;
+    }
+    .imglistas{
+        width: 80px;
+        
+    }
+    .titulo{
+        
+    }
 }
