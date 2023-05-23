@@ -552,7 +552,6 @@ padding: 10px;
         }
         .titulo{
             font-size: 25px;
-            
             }
         .titulo1{
             font-size: 25px;
@@ -576,9 +575,7 @@ padding: 10px;
     }
     nav{
         padding: 15px;
-        
     }
-
     .listaBarra{
         gap: 40px;
     }
@@ -597,7 +594,6 @@ padding: 10px;
     .estrenos{
         height: 150px;
         margin: 8px;
-        
     }
     .imglistas{
         object-fit: cover;
@@ -683,9 +679,5 @@ padding: 10px;
     }
     .imglistas{
         width: 80px;
-        
-    }
-    .titulo{
-        
     }
 }
