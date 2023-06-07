@@ -1,0 +1,73 @@
+.maincuenta{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    .cuenta{
+        padding: 40px;
+        background-color: rgba(22, 28, 27,1);
+        margin: 60px;
+        height: 1100px;
+        border-radius: 20px;
+        box-shadow: 0px 5px 15px rgb(0, 0, 0);
+        display: grid;
+    }
+    .imgcuenta{
+        border-radius: 50%;
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.664);
+        margin: 20px;
+    }
+    .imgcuenta1{
+        border-radius: 50%;
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.664);
+        margin: 20px;
+        margin-bottom: 100px;
+    }
+    .imgcuenta2{
+        border-radius: 50%;
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.664);
+    }
+    .form__titulo{
+        font-size: 50px;
+        word-spacing: 10px;
+        margin: 20px;
+        letter-spacing: 5px;
+    }
+    .form__contenedor{
+        display: grid;
+        font-size: 30px;
+        letter-spacing: 5px;
+    }
+    .form__contenedor1{
+        display: grid;
+        font-size: 30px;
+        letter-spacing: 5px;
+    }
+    .form__input{
+        width: 100%;
+        background: none;
+        color: white;
+        font-size: 20px;
+        padding: 8px;
+        border: none;
+        outline: none;
+        border-bottom: 1px solid #706c6c;
+        bottom: 250px;
+        font-family: 'Bebas Neue', cursive; 
+    }
+    .form__submit{
+        background: $color-principal;
+        color: white;
+        font-family: 'Bebas Neue', cursive; 
+        font-size: 35px;
+        word-spacing: 4PX;
+        letter-spacing: 3px;
+        padding: 8px;
+        border: none;
+        border-radius: 25px;
+        margin: 40px;
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.664);
+        margin-left: 50%;
+    }
+    .recuperar{
+        margin-left: 50%;
+    }
+}

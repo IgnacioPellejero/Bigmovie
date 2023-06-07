@@ -1,0 +1,117 @@
+@media(max-width:1024px){
+header{
+    height: 95px;
+
+.titulo{
+    font-size: 50px;
+}
+.titulo1{
+    font-size: 50px;
+}
+nav{
+.form__inputnav{
+    width: 200px;
+}
+
+    .listaBarra{ 
+    font-size:25px;
+    gap: 20px;
+}}
+}
+main{
+
+.pelisRecomendados{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 10% 70%;
+    grid-template-areas: 
+    "titulopeli titulopeli"
+    "img img"
+    ;
+    gap: 0;
+    .marioimg{
+        grid-area: img;
+        margin-top: 30px;
+    }
+    
+.parrafoMario{
+    display: none;}
+    .titulopeli{grid-area: titulopeli;    
+    }
+    .fotomariotitulo{display: none;}
+}
+
+.estrenos{
+    padding: 5px;
+    gap: 10px;
+}
+.imglistas{
+    width: 300px;
+    
+}
+.imglistas1{display: none;}
+
+.imglista{
+    width: 300px;
+}
+.imglistas2{
+    object-fit: cover;
+    width: 280px;
+    height: 600px;
+}
+.noticias{
+    gap: 20px;
+
+.noti{
+    width: 100%;
+    
+}
+
+}
+
+.cuenta {
+    .imgcuenta2{width: 140px;}
+    .imgcuenta1{width: 140px;}
+    .imgcuenta{width: 140px;}
+
+        }
+    }
+
+
+
+.form__contenedor1{
+    .form__grupo{
+        .form__submit{
+            font-size: 25px;
+        }
+        a{
+            margin: 0;
+            font-size: 25px;
+        }
+    }
+}
+
+.ayudamain{
+    .rickimg{
+        width: 200px;
+        
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

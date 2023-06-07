@@ -1,0 +1,20 @@
+@import "./utilities/variables";
+@import "./utilities/funciones";
+@import "./utilities/mixins";
+
+@import "./base/reset";
+
+@import "./layout/header";
+@import "./layout/main-index";
+@import "./layout/footer";
+
+@import "./layout/main-comunidad";
+@import "./layout/main-cuenta";
+@import "./layout/main-ayuda";
+@import "./layout/main-peliculas";
+
+@import "./layout/media-1280px";
+@import "./layout/media-1024px";
+@import "./layout/media-768px";
+@import "./layout/media-425px";
+@import "./layout/media-320px";

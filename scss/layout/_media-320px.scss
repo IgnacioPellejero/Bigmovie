@@ -1,0 +1,26 @@
+@media (max-width:320px) {
+    header{
+    .headermobile{
+    gap: 10px;
+    }}
+    main{
+    .imglistas2{
+        width: 80px;
+    }
+    .estrenos .imglistas{
+        width: 80px;
+    }}
+
+    .ayudamain{
+        .tituloayuda{font-size: 25px;}
+        .form1{
+            width: 280px;
+            .labelayuda{font-size: 25px;}
+            .ayudaboton{padding: 0;}
+        }
+    }
+
+
+
+
+}

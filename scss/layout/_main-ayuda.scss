@@ -1,0 +1,52 @@
+.ayudamain{
+    display: flex;
+    gap: 30px;
+    justify-content: space-around;
+    height: 100vh;
+    margin-top: 100px;
+    .rickimg{
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.664);
+        border-radius: 20px;
+    }
+    .tituloayuda{
+        font-size: 40px;
+        letter-spacing: 3px;    
+        margin: 20px;
+    }
+    .form1{
+        background-color: rgba(22, 28, 27,1);
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.664);
+        height: 600px;
+        width: 600px;
+        display: grid;
+        border-radius: 25px;
+        .labelayuda{
+            font-size: 30px;
+            padding: 20px;
+            letter-spacing: 2px;
+        }
+        .inputayuda{
+            background:$color-principal ;
+            color: white;
+            font-family: 'Bebas Neue', cursive;
+            border: none;
+            border-radius: 25px;
+            padding: 20px;
+            margin: 10px;
+            font-size: 20px;
+            
+        }
+        .ayudaboton{
+            background: $color-principal;
+            border-radius: 25px;
+            padding: 10px;
+            margin: 10px;
+            font-size: 20px;
+            font-family: 'Bebas Neue', cursive;
+            color: white;
+            width: 200px;
+            margin: 10px;
+            letter-spacing: 3px;
+        }
+    }
+}

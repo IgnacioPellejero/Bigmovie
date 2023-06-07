@@ -1,0 +1,92 @@
+
+.pelisRecomendados{
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.664);
+    background-color: rgba(22, 28, 27,1);
+    padding-left: 20px;
+    margin: 30px;
+    padding: 20px;
+    @include grid(30% 70%,20% 40% 40%,"titulopeli img" "titulomario img" "marioparrafo img",20px,20px)
+    .titulopeli{
+        font-size: 60px;
+        grid-area: titulopeli;
+        margin: 20px;
+        letter-spacing: 5px;
+    }
+    .fotomariotitulo{
+        padding-left: 100px;
+        padding-bottom: 20px;
+        grid-area: titulomario;
+        
+    }
+    .mario{    grid-area: img;
+        width: 100%;
+        padding: 10px;
+    }
+    .marioimg{
+        grid-area: img;
+        width: 100%;
+        padding: 10px;
+    }
+    .parrafoMario{
+        grid-area: marioparrafo;
+        font-size: 30px;
+        word-spacing: 5px;
+    }}
+
+
+.estrenosTitulo{
+    font-size: 30px;
+    padding: 20px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.664);
+}
+.estrenos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.664);
+    background-color: rgba(22, 28, 27,1);
+    height: 250px;
+    align-items: center;
+    margin: 30px;
+}
+.tuListaTitulo{
+    @extend .estrenosTitulo;
+}
+.tuLista{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.664);
+    background-color: rgba(22, 28, 27,1);
+    margin: 30px;
+    height: 700px;
+    align-items: center;
+}
+.imglistas2{
+    object-fit: cover;
+    height: 350px;
+}
+.tendenciasTitulo{
+    padding: 20px;
+    font-size: 30px;
+    display: flex;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.664);
+}
+.fuego{
+    display: flex;
+    margin-left: 30px;
+}
+.tendencias{
+    @extend .estrenos
+}
+
+.clasicosTitulo{
+    @extend .estrenosTitulo
+}
+.clasicos{
+    @extend .estrenos
+}
+.proximosEstrenos{
+    @extend .estrenos
+}
+

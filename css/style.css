@@ -1,295 +1,229 @@
-html{font-family: 'Bebas Neue', cursive; color: white; margin: 0; padding: 0;
-;background-image: radial-gradient(circle at 50% -20.71%, #ff7f85 0, #ff748c 8.33%, #ff6994 16.67%, #ff5d9c 25%, #ff52a4 33.33%, #ff47ad 41.67%, #f23cb5 50%, #e234be 58.33%, #cf32c8 66.67%, #b935d2 75%, #9f3bdb 83.33%, #7e42e5 91.67%, #514aed 100%)}
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    
-}
-body{
-    width: 100%;
+html {
+  font-family: 'Bebas Neue', cursive;
+  color: white;
+  margin: 0;
+  padding: 0;
+  background-image: radial-gradient(circle at 50% -20.71%, #ff7f85 0, #ff748c 8.33%, #ff6994 16.67%, #ff5d9c 25%, #ff52a4 33.33%, #ff47ad 41.67%, #f23cb5 50%, #e234be 58.33%, #cf32c8 66.67%, #b935d2 75%, #9f3bdb 83.33%, #7e42e5 91.67%, #514aed 100%); }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
 
-}
-header{
-    display: flex;
-    background-color: black;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.664);
-    justify-content: space-between;
-    
-}
-.titulo{
+body {
+  width: 100%; }
+
+header {
+  display: flex;
+  background-color: black;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.664);
+  justify-content: space-between; }
+  header .titulo {
     font-size: 80px;
     padding: 15px;
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.664);
     background-color: #72329c;
-    display: flex ;
-}
-.navmobile{display: none;}
-nav{
+    display: flex; }
+  header .titulo1 {
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.664);
+    background-color: #72329c;
+    display: flex;
+    font-size: 80px;
+    padding: 15px;
+    color: white;
+    outline: none;
+    text-decoration: none; }
+  header .navmobile {
+    display: none; }
+  header nav {
     font-size: 25px;
     display: flex;
     gap: 20px;
     padding: 40px;
     align-items: center;
-    height: 100%;
-}
-
-.listaBarra{
+    height: 100%; }
+    header nav .form__submitnav {
+      background: #72329c;
+      color: white;
+      font-family: 'Bebas Neue', cursive;
+      border: none;
+      border-radius: 25px;
+      padding: 10px;
+      letter-spacing: 2px;
+      font-size: 25px;
+      margin-left: 20px; }
+    header nav .form__inputnav {
+      background: #72329c;
+      color: white;
+      font-family: 'Bebas Neue', cursive;
+      border: none;
+      border-radius: 25px;
+      padding: 10px;
+      margin-right: 15px;
+      width: 300px; }
+    header nav ul li a {
+      color: white; }
+  header .listaBarra {
     display: flex;
     justify-content: space-around;
     list-style-type: none;
     font-size: 35px;
     gap: 80px;
-    flex-wrap: wrap;
+    flex-wrap: wrap; }
+  header .lupa {
+    display: none; }
 
-}
-ul li a{
-    color: white;
-}
-.lupa{
-    display: none;
-}
-
-.titulo1{
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.664);
-    background-color: #72329c;
-    display: flex ;
-    font-size: 80px;
-    padding: 15px;
-    color: white;
-    outline: none;
-    text-decoration: none;
-
-}
-
-
-.pelisRecomendados{
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.664);
-    background-color: rgba(22, 28, 27,1);
-    padding-left: 20px;
-    margin: 30px;
-    display: grid;
-    grid-template-columns: 30% 70% ;
-    grid-template-rows: 20% 40% 40%;
-    grid-template-areas: 
-    "titulopeli img "
-    "titulomario img "
-    "marioparrafo img ";
-    row-gap: 20px;
-    column-gap: 20px;
-    padding: 20px;
-    
-}
-
-.titulopeli{
+.pelisRecomendados {
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.664);
+  background-color: #161c1b;
+  padding-left: 20px;
+  margin: 30px;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 30% 70%;
+  grid-template-rows: 20% 40% 40%;
+  grid-template-areas: "titulopeli img" "titulomario img" "marioparrafo img";
+  row-gap: 20px;
+  column-gap: 20px; }
+  .pelisRecomendados .titulopeli {
     font-size: 60px;
     grid-area: titulopeli;
     margin: 20px;
-    letter-spacing: 5px;
-}
-.fotomariotitulo{
+    letter-spacing: 5px; }
+  .pelisRecomendados .fotomariotitulo {
     padding-left: 100px;
     padding-bottom: 20px;
-    grid-area: titulomario;
-    
-}
-
-.mario{    grid-area: img;
+    grid-area: titulomario; }
+  .pelisRecomendados .mario {
+    grid-area: img;
     width: 100%;
-    padding: 10px;
-    
-
-}
-.marioimg{
-grid-area: img;
-width: 100%;
-padding: 10px;
-
-}
-
-
-.parrafoMario{
+    padding: 10px; }
+  .pelisRecomendados .marioimg {
+    grid-area: img;
+    width: 100%;
+    padding: 10px; }
+  .pelisRecomendados .parrafoMario {
     grid-area: marioparrafo;
     font-size: 30px;
-    word-spacing: 5px;
-}
-.estrenosTitulo{
-    font-size: 30px;
-    padding: 20px;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.664);
-    
-}
-.estrenos{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.664);
-    background-color: rgba(22, 28, 27,1);
-    height: 250px;
-    align-items: center;
-    margin: 30px;
-    
-}
-.tuListaTitulo{  
-    font-size: 30px;
-    padding: 20px;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.664);
-}
-.tuLista{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.664);
-    background-color: rgba(22, 28, 27,1);
-    margin: 30px;
-    height: 700px;
-    align-items: center;
-    
-}
-.imglistas2{
-    object-fit: cover;
-    
-    height: 350px;
-}
+    word-spacing: 5px; }
 
+.estrenosTitulo, .tuListaTitulo, .clasicosTitulo {
+  font-size: 30px;
+  padding: 20px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.664); }
 
-.tendenciasTitulo{
-    padding: 20px;
-    font-size: 30px;
-    display: flex;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.664);
-}
+.estrenos, .tendencias, .clasicos, .proximosEstrenos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.664);
+  background-color: #161c1b;
+  height: 250px;
+  align-items: center;
+  margin: 30px; }
 
-.tendencias{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.664);
-    background-color: rgba(22, 28, 27,1);
-    margin: 30px;
-    height: 250px;
-    align-items: center;
-}
-.fuego{
-    display: flex;
-    margin-left: 30px;
+.tuLista {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.664);
+  background-color: #161c1b;
+  margin: 30px;
+  height: 700px;
+  align-items: center; }
 
-}
-.clasicosTitulo{
-    font-size: 30px;
-    padding: 20px;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.664);
+.imglistas2 {
+  object-fit: cover;
+  height: 350px; }
 
-}
-.clasicos{    
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.664);
-    background-color: rgba(22, 28, 27,1);
-    margin: 30px;
-    height: 250px;
-    align-items: center;
-}
-.estrenosTitulo{
-    font-size: 30px;
-    padding: 20px;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.664);
-}
-.proximosEstrenos{
-    flex-wrap: wrap;
-    display: flex;
-    justify-content: space-around;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.664);
-    background-color: rgba(22, 28, 27,1);
-    margin: 30px;
-    height: 250px;
-    align-items: center;
-}
+.tendenciasTitulo {
+  padding: 20px;
+  font-size: 30px;
+  display: flex;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.664); }
 
-.footer{
-    font-size: 30px;
-    display: flex;
-    list-style-type: none;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.664);
-    background-color: rgba(22, 28, 27,1);
-    margin-top: 50px;
-    padding: 20px;
-    margin-bottom: 20px;
-}
-.noticias{
-    display: flex;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.664);
-    background-color: rgba(22, 28, 27,1);
-    margin: 40px;
-    padding: 20px;
-    justify-content: space-around;
+.fuego {
+  display: flex;
+  margin-left: 30px; }
 
-}
-.comuTitulo{
-    font-size: 30px;
-    padding: 20px;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.664);
-    margin-top: 40px;
+ul.footer {
+  font-size: 30px;
+  display: flex;
+  list-style-type: none;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.664);
+  background-color: #161c1b;
+  margin-top: 50px;
+  padding: 20px;
+  margin-bottom: 20px; }
+  ul.footer li a {
+    color: white; }
 
+.comuTitulo {
+  font-size: 30px;
+  padding: 20px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.664);
+  margin-top: 40px; }
 
-}
-.noti{
-    
+.noticias {
+  display: flex;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.664);
+  background-color: #161c1b;
+  margin: 40px;
+  padding: 20px;
+  justify-content: space-around; }
+  .noticias .noti {
     background-color: #72329c;
     padding: 20px;
     width: 400px;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.664);
-}
-.imginfo{
-    font-size: 20px;
-    word-spacing: 5px;
-}
-.imgcuenta{
-    border-radius: 50%;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.664);
-    margin: 20px;
-}
-.maincuenta{
-    display: grid;
-    grid-template-columns: 50% 50%;
-    
-    
-}
-.cuenta{
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.664); }
+    .noticias .noti .voto {
+      font-size: 40px;
+      word-spacing: 5px; }
+    .noticias .noti .imgcomuni {
+      width: 100%; }
+    .noticias .noti .imginfo {
+      font-size: 20px;
+      word-spacing: 5px; }
+
+.maincuenta {
+  display: grid;
+  grid-template-columns: 50% 50%; }
+  .maincuenta .cuenta {
     padding: 40px;
-    background-color: rgba(22, 28, 27,1);
+    background-color: #161c1b;
     margin: 60px;
     height: 1100px;
     border-radius: 20px;
-    box-shadow: 0px 5px 15px rgb(0, 0, 0);
-    display: grid;
-}
-.voto{
-    font-size: 40px;
-    word-spacing: 5px;
-}
-.form__titulo{
+    box-shadow: 0px 5px 15px black;
+    display: grid; }
+  .maincuenta .imgcuenta {
+    border-radius: 50%;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.664);
+    margin: 20px; }
+  .maincuenta .imgcuenta1 {
+    border-radius: 50%;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.664);
+    margin: 20px;
+    margin-bottom: 100px; }
+  .maincuenta .imgcuenta2 {
+    border-radius: 50%;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.664); }
+  .maincuenta .form__titulo {
     font-size: 50px;
     word-spacing: 10px;
     margin: 20px;
-    letter-spacing: 5px;
-}
-.form__contenedor{
+    letter-spacing: 5px; }
+  .maincuenta .form__contenedor {
     display: grid;
     font-size: 30px;
-    letter-spacing: 5px;
-}
-.form__contenedor1{
+    letter-spacing: 5px; }
+  .maincuenta .form__contenedor1 {
     display: grid;
     font-size: 30px;
-    letter-spacing: 5px;
-}
-
-.form__input{
+    letter-spacing: 5px; }
+  .maincuenta .form__input {
     width: 100%;
     background: none;
     color: white;
@@ -299,12 +233,11 @@ padding: 10px;
     outline: none;
     border-bottom: 1px solid #706c6c;
     bottom: 250px;
-    font-family: 'Bebas Neue', cursive; 
-}
-.form__submit{
+    font-family: 'Bebas Neue', cursive; }
+  .maincuenta .form__submit {
     background: #72329c;
     color: white;
-    font-family: 'Bebas Neue', cursive; 
+    font-family: 'Bebas Neue', cursive;
     font-size: 35px;
     word-spacing: 4PX;
     letter-spacing: 3px;
@@ -313,373 +246,294 @@ padding: 10px;
     border-radius: 25px;
     margin: 40px;
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.664);
-    margin-left: 50%;
-}
-.imgcuenta1{
-    border-radius: 50%;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.664);
-    margin: 20px;
-    
-    margin-bottom: 100px;
+    margin-left: 50%; }
+  .maincuenta .recuperar {
+    margin-left: 50%; }
 
-}
-.imgcuenta2{
-    border-radius: 50%;
+.ayudamain {
+  display: flex;
+  gap: 30px;
+  justify-content: space-around;
+  height: 100vh;
+  margin-top: 100px; }
+  .ayudamain .rickimg {
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.664);
-    
-
-}
-.recuperar{
-    margin-left: 50%;
-}
-.form__submitnav{
-    background: #72329c;
-    color: white;
-    font-family: 'Bebas Neue', cursive;
-    border: none;
-    border-radius: 25px;
-    padding: 10px;
-    letter-spacing: 2px;
-    font-size: 25px;
-    margin-left: 20px;
-}
-.form__inputnav{
-    background: #72329c;
-    color: white;
-    font-family: 'Bebas Neue', cursive;
-    border: none;
-    border-radius: 25px;
-    padding: 10px;
-    margin-right: 15px;
-    width: 300px;
-    
-}
-.ayudamain{
-    display: flex;
-    gap: 30px;
-    justify-content: space-around;
-    height: 100vh;
-    margin-top: 100px;
-    
-}
-.form1{
-    background-color: rgba(22, 28, 27,1);
+    border-radius: 20px; }
+  .ayudamain .tituloayuda {
+    font-size: 40px;
+    letter-spacing: 3px;
+    margin: 20px; }
+  .ayudamain .form1 {
+    background-color: #161c1b;
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.664);
     height: 600px;
     width: 600px;
     display: grid;
-    border-radius: 25px;
-}
-.tituloayuda{
-    font-size: 40px;
-    letter-spacing: 3px;    
-    margin: 20px;
-    
-}
-.labelayuda{
-    font-size: 30px;
-    padding: 20px;
-    letter-spacing: 2px;
-}
-.inputayuda{
-    background: #72329c;
-    color: white;
-    font-family: 'Bebas Neue', cursive;
-    border: none;
-    border-radius: 25px;
-    padding: 20px;
-    margin: 10px;
-    font-size: 20px;
-    
-}
-.rickimg{
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.664);
-    border-radius: 20px;
-}
-.ayudaboton{
-    background: #72329c;
-    border-radius: 25px;
-    padding: 10px;
-    margin: 10px;
-    font-size: 20px;
-    font-family: 'Bebas Neue', cursive;
-    color: white;
-    width: 200px;
-    margin: 10px;
-    letter-spacing: 3px;
-}
-.sectionpelicula{
-    background-color: rgba(22, 28, 27,1) ;
-    margin: 80px;
-    padding: 100px;
+    border-radius: 25px; }
+    .ayudamain .form1 .labelayuda {
+      font-size: 30px;
+      padding: 20px;
+      letter-spacing: 2px; }
+    .ayudamain .form1 .inputayuda {
+      background: #72329c;
+      color: white;
+      font-family: 'Bebas Neue', cursive;
+      border: none;
+      border-radius: 25px;
+      padding: 20px;
+      margin: 10px;
+      font-size: 20px; }
+    .ayudamain .form1 .ayudaboton {
+      background: #72329c;
+      border-radius: 25px;
+      padding: 10px;
+      margin: 10px;
+      font-size: 20px;
+      font-family: 'Bebas Neue', cursive;
+      color: white;
+      width: 200px;
+      margin: 10px;
+      letter-spacing: 3px; }
+
+.sectionpelicula {
+  background-color: #161c1b;
+  margin: 80px;
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  font-size: 30px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.664);
+  letter-spacing: 2px; }
+  .sectionpelicula .video {
     display: flex;
+    justify-content: center; }
+
+@media (max-width: 1280px) {
+  header .form__submitnav {
+    display: none; }
+  header .listaBarra {
+    gap: 20px; }
+  .mario {
+    margin-top: 50px; }
+  .imglistas2 {
+    width: 300px; }
+  .imglistas1 {
+    display: none; } }
+
+@media (max-width: 1024px) {
+  header {
+    height: 95px; }
+    header .titulo {
+      font-size: 50px; }
+    header .titulo1 {
+      font-size: 50px; }
+    header nav .form__inputnav {
+      width: 200px; }
+    header nav .listaBarra {
+      font-size: 25px;
+      gap: 20px; }
+  main .pelisRecomendados {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 10% 70%;
+    grid-template-areas: "titulopeli titulopeli" "img img";
+    gap: 0; }
+    main .pelisRecomendados .marioimg {
+      grid-area: img;
+      margin-top: 30px; }
+    main .pelisRecomendados .parrafoMario {
+      display: none; }
+    main .pelisRecomendados .titulopeli {
+      grid-area: titulopeli; }
+    main .pelisRecomendados .fotomariotitulo {
+      display: none; }
+  main .estrenos, main .tendencias, main .clasicos, main .proximosEstrenos {
+    padding: 5px;
+    gap: 10px; }
+  main .imglistas {
+    width: 300px; }
+  main .imglistas1 {
+    display: none; }
+  main .imglista {
+    width: 300px; }
+  main .imglistas2 {
+    object-fit: cover;
+    width: 280px;
+    height: 600px; }
+  main .noticias {
+    gap: 20px; }
+    main .noticias .noti {
+      width: 100%; }
+  main .cuenta .imgcuenta2 {
+    width: 140px; }
+  main .cuenta .imgcuenta1 {
+    width: 140px; }
+  main .cuenta .imgcuenta {
+    width: 140px; }
+  .form__contenedor1 .form__grupo .form__submit {
+    font-size: 25px; }
+  .form__contenedor1 .form__grupo a {
+    margin: 0;
+    font-size: 25px; }
+  .ayudamain .rickimg {
+    width: 200px; } }
+
+@media (max-width: 768px) {
+  header {
     flex-direction: column;
-    gap: 30px;
-    font-size: 30px;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.664);
-    letter-spacing: 2px;
-}
-.video{
-    display: flex;
-    justify-content: center;
-    
-}
-.imgcomuni{
-    width: 100%;
-}
-
-@media (max-width:1280px){
-    .form__submitnav{display: none;}
-    .listaBarra{
-        gap: 20px;
-    }
-    .mario{
-        margin-top: 50px;
-    }
-    .imglistas2{
-        width: 300px;
-    }
-    .imglistas1{
-        display: none;
-    }
-}
-@media(max-width:1024px){
-    header{
-        height: 95px;
-    }
-    .titulo{
-        font-size: 50px;
-    }
-    .titulo1{
-        font-size: 50px;
-    }
-    .listaBarra{ font-size:25px;
-    gap: 20px;
-    }
-    
-    .form__inputnav{
-        width: 200px;
-    }
-    .pelisRecomendados{
-        display: grid;
-        grid-template-columns: 50% 50%;
-        grid-template-rows: 10% 70%;
-        grid-template-areas: 
-        "titulopeli titulopeli"
-        "img img"
-        ;
-        gap: 0;
-    }
-    .marioimg{
-        grid-area: img;
-        margin-top: 30px;
-    }
-    .parrafoMario{
-    display: none;}
-    .titulopeli{grid-area: titulopeli;    
-    }
-    .fotomariotitulo{display: none;}
-    .estrenos{
-        padding: 5px;
-        gap: 10px;
-    }
-    .imglistas{
-        width: 300px;
-        
-    }
-    .imglistas1{display: none;}
-    
-    .imglista{
-        width: 300px;
-    }
-    .imglistas2{
-        object-fit: cover;
-        width: 280px;
-        height: 600px;
-    }
-    .noticias{
-        gap: 20px;
-    }
-    .noti{
-        width: 100%;
-        
-        
-    }
-
-}
-
-
-
-@media(max-width:768px){
-    header{
-        flex-direction: column;
-        align-items: center;
-        height: 200px;
-        
-        }
-
-    .form__inputnav{display: none;}
-    .listaBarra{
-        gap: 15px;
-        font-size: 30px;
-    }
-    .lupa{
-        display: block;
-        width: 40px;
-        
-    }
-    .lupa:hover{
-        width: 60px;
-    }
-
-    .imglistas{
-        width: 220px;
-        height: 150px;
-    }
-    .imglistas1{display: none;}
-    .imglistas2{
-        width: 200px;
-        height: 300px;
-    }
-    .tuLista{
-        height: 400px;
-        padding: 20px;
-    }
-
-}
-
-    @media (max-width:425px) {
-        header{
-            height: 110px;
-        }
-        .titulo{
-            font-size: 20px;
-            }
-        .titulo1{
-            font-size: 20px;
-        }
-        .listaBarra{
-            font-size: 20px;
-            }
-    .lupa{
-        width: 25px;
-    }
-
-    .headermobile{
-        display: flex;
-        gap: 90px;
-    }
-    .navmobile{display: flex;
-    list-style-type: none;
     align-items: center;
-    font-size: 15px;
-    gap: 10px;
-    }
-    nav{
-        padding: 15px;
-    }
-    .listaBarra{
-        gap: 40px;
-    }
-    .itemmobile{display: none;}
-    .titulopeli{
-        font-size: 35px;
-    }
-    .pelisRecomendados{
-        height: 350px;
-        padding: 0;
-    }
-    .estrenosTitulo{
-        font-size: 20px;
-        padding: 5px;
-    }
-    .estrenos{
-        height: 150px;
-        margin: 8px;
-    }
-    .imglistas{
-        object-fit: cover;
-        width: 100px;
-        height: 100px;
-    }
-    .tuListaTitulo{
-        font-size: 20px;
-        padding: 5px;
-    }
-    .tuLista{
-        margin: 8px;
-        padding: 2px;
-        height: 380px;
-        padding: 5px;
-    }
-    .imglistas2{
-        width: 100px;
-        height: 350px;
-    }
-    .tendenciasTitulo{
-        font-size: 20px;
-        padding: 5px;
-    }
-    .fuego{
-        width: 20px;
-    }
-    .tendencias{
-        height: 150px;
-        margin: 8px;
-        
-    }
-    .clasicosTitulo{
-        font-size: 20px;
-        padding: 5px;
-    }
-    .clasicos{
-        height: 150px;
-        margin: 8px;
-    }
-    .estrenosTitulo{
-        font-size: 20px;
-        padding: 5px;
-    }
-    .proximosEstrenos{
-        height: 150px;
-        margin: 8px;
-    }
-    .footer{
+    height: 200px; }
+    header nav .form__inputnav {
+      display: none; }
+    header nav .listaBarra {
+      gap: 15px;
+      font-size: 30px; }
+    header nav .lupa {
+      display: block;
+      width: 40px; }
+    header nav .lupa:hover {
+      width: 60px; }
+  main .imglistas {
+    width: 220px;
+    height: 150px; }
+  main .imglistas1 {
+    display: none; }
+  main .imglistas2 {
+    width: 200px;
+    height: 300px; }
+  main .tuLista {
+    height: 400px;
+    padding: 20px; }
+  .ayudamain .rickimg {
+    display: none; }
+  .form__contenedor1 .form__grupo .form__submit {
+    margin: 20px;
+    font-size: 25px; }
+  .form__contenedor .form__grupo .form__submit {
+    margin: 20px;
+    font-size: 25px; } }
+
+@media (max-width: 425px) {
+  ul li a {
+    font-size: 15px; }
+  main .pelisRecomendados {
+    height: 350px;
+    padding: 0; }
+    main .pelisRecomendados .titulopeli {
+      font-size: 35px; }
+  main .estrenosTitulo, main .tuListaTitulo, main .clasicosTitulo {
+    font-size: 20px;
+    padding: 5px; }
+  main .estrenos, main .tendencias, main .clasicos, main .proximosEstrenos {
+    height: 150px;
+    margin: 8px; }
+    main .estrenos .imglistas, main .tendencias .imglistas, main .clasicos .imglistas, main .proximosEstrenos .imglistas {
+      object-fit: cover;
+      width: 100px;
+      height: 100px; }
+  main .tuLista {
+    margin: 8px;
+    padding: 2px;
+    height: 380px;
+    padding: 5px; }
+  main .imglistas2 {
+    width: 100px;
+    height: 350px; }
+  main .tendenciasTitulo {
+    font-size: 20px;
+    padding: 5px; }
+  main .fuego {
+    width: 20px; }
+  main .comuTitulo {
+    font-size: 15px; }
+  main .noticias {
+    margin: 10px;
+    gap: 5px;
+    padding: 5px; }
+    main .noticias .noti {
+      width: 100px;
+      padding: 5px; }
+      main .noticias .noti .voto {
+        font-size: 18px; }
+    main .noticias .imginfo {
+      display: none; }
+    main .noticias .corazon {
+      width: 30px; }
+  header {
+    height: 110px; }
+    header .headermobile {
+      display: flex;
+      gap: 90px; }
+      header .headermobile ul li a {
+        color: white; }
+      header .headermobile .titulo {
+        font-size: 20px; }
+      header .headermobile .titulo1 {
+        font-size: 20px; }
+      header .headermobile .navmobile {
+        display: flex;
+        list-style-type: none;
+        align-items: center;
         font-size: 15px;
-    }
-    .imglistas1{
-        padding: 0;
-        margin: 0;
-    }
-    .itemweb{
-        display: none;
-    }  
-    .noticias{
-        margin: 10px;
-        gap: 5px;
-        padding: 5px;
-    }
-    .noti{
+        gap: 10px; }
+    header nav {
+      padding: 15px; }
+      header nav .listaBarra {
+        gap: 40px;
+        font-size: 20px; }
+        header nav .listaBarra .itemmobile {
+          display: none; }
+        header nav .listaBarra .lupa {
+          width: 25px; }
+        header nav .listaBarra .itemweb {
+          display: none; }
+  .maincuenta {
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%; }
+    .maincuenta .cuenta {
+      padding: 10px;
+      margin: 10px;
+      height: 800px; }
+      .maincuenta .cuenta h2 {
+        font-size: 40px; }
+      .maincuenta .cuenta .form__contenedor1 {
+        font-size: 25px; }
+        .maincuenta .cuenta .form__contenedor1 .form__grupo .form__submit {
+          margin: 0px;
+          margin-top: 40px;
+          margin-bottom: 20px;
+          margin-left: 80px; }
+      .maincuenta .cuenta .imgcuenta {
         width: 100px;
-        padding: 5px;
-    }
-    .voto{font-size: 18px;}
-    .imginfo{display: none;}
-    .comuTitulo{font-size: 15px;}
-    .corazon{
-        width: 30px;
-    }
+        margin: 0; }
+      .maincuenta .cuenta .imgcuenta1 {
+        width: 100px; }
+      .maincuenta .cuenta .imgcuenta2 {
+        width: 100px; }
+      .maincuenta .cuenta .form__contenedor {
+        font-size: 25px; }
+  .ayudamain {
+    margin-top: 20px;
+    margin-bottom: 90px; }
+    .ayudamain .rickimg {
+      display: none; }
+    .ayudamain .form1 {
+      width: 400px;
+      height: 700px; } }
 
-}
-
-@media (max-width:320px) {
-    .headermobile{
-    gap: 10px;
-    }
-    .imglistas2{
-        width: 80px;
-    }
-    .imglistas{
-        width: 80px;
-    }
-}
+@media (max-width: 320px) {
+  header .headermobile {
+    gap: 10px; }
+  main .imglistas2 {
+    width: 80px; }
+  main .estrenos .imglistas, main .tendencias .imglistas, main .clasicos .imglistas, main .proximosEstrenos .imglistas {
+    width: 80px; }
+  .ayudamain .tituloayuda {
+    font-size: 25px; }
+  .ayudamain .form1 {
+    width: 280px; }
+    .ayudamain .form1 .labelayuda {
+      font-size: 25px; }
+    .ayudamain .form1 .ayudaboton {
+      padding: 0; } }

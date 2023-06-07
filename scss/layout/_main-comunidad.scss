@@ -1,0 +1,31 @@
+.comuTitulo{
+    font-size: 30px;
+    padding: 20px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.664);
+    margin-top: 40px;
+}
+.noticias{
+    display: flex;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.664);
+    background-color: rgba(22, 28, 27,1);
+    margin: 40px;
+    padding: 20px;
+    justify-content: space-around;
+.noti{
+    background-color:$color-principal ;
+    padding: 20px;
+    width: 400px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.664);
+    .voto{
+        font-size: 40px;
+        word-spacing: 5px;
+    }
+    .imgcomuni{
+        width: 100%;
+    }
+.imginfo{
+    font-size: 20px;
+    word-spacing: 5px;
+}}
+
+}

@@ -1,0 +1,63 @@
+@media(max-width:768px){
+header{
+    flex-direction: column;
+    align-items: center;
+    height: 200px;
+nav{
+.form__inputnav{display: none;}
+.listaBarra{
+    gap: 15px;
+    font-size: 30px;
+}
+.lupa{
+    display: block;
+    width: 40px;
+    
+}
+.lupa:hover{
+    width: 60px;
+}}}
+main{
+    
+.imglistas{
+    width: 220px;
+    height: 150px;
+}
+.imglistas1{display: none;}
+.imglistas2{
+    width: 200px;
+    height: 300px;
+}
+.tuLista{
+    height: 400px;
+    padding: 20px;
+}
+
+}
+.ayudamain{
+    .rickimg{
+        display: none;
+    }
+
+}
+
+.form__contenedor1{
+    .form__grupo{
+        .form__submit{
+            margin: 20px;
+            font-size: 25px;}}}
+
+.form__contenedor{
+    .form__grupo{
+        .form__submit{
+            margin: 20px;
+            font-size: 25px;
+        }
+    }
+}
+
+
+
+
+
+}
