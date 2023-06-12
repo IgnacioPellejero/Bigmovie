@@ -55,6 +55,7 @@ header{
         ul li a{
             color: white;
         }
+        ul li a:hover{color: $color-principal;}
     }
     .listaBarra{
         display: flex;

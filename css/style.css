@@ -63,6 +63,8 @@ header {
       width: 300px; }
     header nav ul li a {
       color: white; }
+    header nav ul li a:hover {
+      color: #72329c; }
   header .listaBarra {
     display: flex;
     justify-content: space-around;
@@ -106,6 +108,55 @@ header {
     grid-area: marioparrafo;
     font-size: 30px;
     word-spacing: 5px; }
+  .pelisRecomendados .carrousel {
+    grid-area: img;
+    width: 100%;
+    padding: 40px; }
+  .pelisRecomendados .conteCarrousel {
+    width: 100%;
+    height: 700px;
+    overflow: hidden; }
+    .pelisRecomendados .conteCarrousel .imgcarrusel {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+  .pelisRecomendados .itemCarrousel {
+    position: relative;
+    width: 100%;
+    height: 100%; }
+  .pelisRecomendados .itemCarrouselTarjeta {
+    width: 100%;
+    height: 100%; }
+  .pelisRecomendados .itemCarrouselArrows {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px; }
+  .pelisRecomendados .itemCarrouselArrows > i:hover {
+    cursor: pointer; }
+  .pelisRecomendados #itemCarrousel-1 {
+    background-color: #e23232; }
+  .pelisRecomendados #itemCarrousel-2 {
+    background-color: #32c8e2; }
+  .pelisRecomendados #itemCarrousel-3 {
+    background-color: #c8e232; }
+  .pelisRecomendados .conteCarrouselController {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly; }
+  .pelisRecomendados .conteCarrouselController > a {
+    text-decoration: none;
+    font-size: 2em;
+    color: grey; }
+  .pelisRecomendados .itemCarrouselArrows > a > i {
+    color: white; }
 
 .estrenosTitulo, .tuListaTitulo, .clasicosTitulo {
   font-size: 30px;
@@ -121,6 +172,26 @@ header {
   height: 250px;
   align-items: center;
   margin: 30px; }
+  .estrenos .imglistas1:hover, .tendencias .imglistas1:hover, .clasicos .imglistas1:hover, .proximosEstrenos .imglistas1:hover, .estrenos .imglistas:hover, .tendencias .imglistas:hover, .clasicos .imglistas:hover, .proximosEstrenos .imglistas:hover {
+    width: 600px;
+    -webkit-animation: scale-up-center 0.8s;
+    animation: scale-up-center 0.8s; }
+
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(2);
+    transform: scale(2); }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1); } }
+
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5); }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1); } }
 
 .tuLista {
   display: flex;
@@ -417,18 +488,20 @@ ul.footer {
 @media (max-width: 425px) {
   ul li a {
     font-size: 15px; }
-  main .pelisRecomendados {
+  .pelisRecomendados {
     height: 350px;
     padding: 0; }
-    main .pelisRecomendados .titulopeli {
+    .pelisRecomendados .conteCarrousel {
+      height: 250px; }
+    .pelisRecomendados .titulopeli {
       font-size: 35px; }
-  main .estrenosTitulo, main .tuListaTitulo, main .clasicosTitulo {
+  .estrenosTitulo, .tuListaTitulo, .clasicosTitulo {
     font-size: 20px;
     padding: 5px; }
-  main .estrenos, main .tendencias, main .clasicos, main .proximosEstrenos {
+  .estrenos, .tendencias, .clasicos, .proximosEstrenos {
     height: 150px;
     margin: 8px; }
-    main .estrenos .imglistas, main .tendencias .imglistas, main .clasicos .imglistas, main .proximosEstrenos .imglistas {
+    .estrenos .imglistas, .tendencias .imglistas, .clasicos .imglistas, .proximosEstrenos .imglistas {
       object-fit: cover;
       width: 100px;
       height: 100px; }
@@ -440,25 +513,25 @@ ul.footer {
   main .imglistas2 {
     width: 100px;
     height: 350px; }
-  main .tendenciasTitulo {
+  .tendenciasTitulo {
     font-size: 20px;
     padding: 5px; }
-  main .fuego {
+  .fuego {
     width: 20px; }
-  main .comuTitulo {
+  .comuTitulo {
     font-size: 15px; }
-  main .noticias {
+  .noticias {
     margin: 10px;
     gap: 5px;
     padding: 5px; }
-    main .noticias .noti {
+    .noticias .noti {
       width: 100px;
       padding: 5px; }
-      main .noticias .noti .voto {
+      .noticias .noti .voto {
         font-size: 18px; }
-    main .noticias .imginfo {
+    .noticias .imginfo {
       display: none; }
-    main .noticias .corazon {
+    .noticias .corazon {
       width: 30px; }
   header {
     height: 110px; }
@@ -527,6 +600,11 @@ ul.footer {
     gap: 10px; }
   main .imglistas2 {
     width: 80px; }
+  main .pelisRecomendados {
+    margin: 10px; }
+    main .pelisRecomendados .conteCarrousel {
+      height: 200px;
+      margin-top: 40px; }
   main .estrenos .imglistas, main .tendencias .imglistas, main .clasicos .imglistas, main .proximosEstrenos .imglistas {
     width: 80px; }
   .ayudamain .tituloayuda {

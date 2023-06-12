@@ -1,16 +1,17 @@
-@media (max-width:425px)
-    { 
+@media (max-width:425px){ 
         ul li a{
-            font-size: 15px;
-        }
-    main{
+            font-size: 15px;}
+
         .pelisRecomendados{
             height: 350px;
             padding: 0;
+            .conteCarrousel{
+                height: 250px;}
             .titulopeli{
                 font-size: 35px;
-            }
-        }
+            }}
+
+        
         .estrenosTitulo{
             font-size: 20px;
             padding: 5px;
@@ -24,6 +25,7 @@
                 height: 100px;
             }
         }
+        main{
         .tuLista{
             margin: 8px;
             padding: 2px;
@@ -33,7 +35,7 @@
         .imglistas2{
             width: 100px;
             height: 350px;
-        }
+        }}
         .tendenciasTitulo{
             font-size: 20px;
             padding: 5px;
@@ -57,7 +59,8 @@
         .corazon{
             width: 30px;
         }}
-    }
+    
+    
     header{
         height: 110px;
         .headermobile{
@@ -89,9 +92,7 @@
             width: 25px;
         }
         .itemweb{
-            display: none;
-        }  
-        }
+            display: none;}  }
         }
 
         
@@ -107,29 +108,19 @@
     margin: 10px;
     height: 800px;
     h2{
-        font-size: 40px;
-    }
-    .form__contenedor1{
-        font-size: 25px;
-        .form__grupo{
-            .form__submit{
+        font-size: 40px;}
+    .form__contenedor1{font-size: 25px;
+        .form__grupo{.form__submit{
                 margin: 0px;
                 margin-top: 40px;
                 margin-bottom: 20px;
-                margin-left: 80px;
-                }}
-    }
-    .imgcuenta{width: 100px;
-    margin: 0;}
+                margin-left: 80px;}}}
+    .imgcuenta{width: 100px;margin: 0;}
     .imgcuenta1{width: 100px;}
-    .imgcuenta2{
-        width: 100px;
-    }
-    .form__contenedor{
-        font-size: 25px;
-    }
-}
-}
+    .imgcuenta2{width: 100px;}
+    .form__contenedor{font-size: 25px;}
+}}
+
 
 .ayudamain{
     margin-top: 20px;
@@ -142,24 +133,6 @@
     
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 }
