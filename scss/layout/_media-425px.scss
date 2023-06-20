@@ -1,7 +1,18 @@
 @media (max-width:425px){ 
         ul li a{
-            font-size: 15px;}
-
+            font-size: 20px;}
+            .hamburger img{
+                width: 38px;
+                
+            }
+            header{
+            .titulo{
+                font-size: 35px;
+            }}
+        header nav{
+            width: 180px;
+            height: 600px;
+        }
         .pelisRecomendados{
             height: 350px;
             padding: 0;
@@ -17,11 +28,10 @@
             padding: 5px;
         }
         .estrenos{
-            height: 150px;
+            height: 130px;
             margin: 8px;
             .imglistas{
-                object-fit: cover;
-                width: 100px;
+                width: 120px;
                 height: 100px;
             }
         }
@@ -133,6 +143,13 @@
     
 
 }
-
+.sectionpelicula{
+    padding-top: 30px;
+    padding: 20px;
+    h2{font-size: 30px;}
+}
+.video{iframe{
+    height: 300px;}}
 
 }
+.parrafopeli{font-size: 20px;}

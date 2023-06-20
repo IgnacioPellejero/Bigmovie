@@ -1,22 +1,18 @@
 @media(max-width:768px){
 header{
-    flex-direction: column;
     align-items: center;
-    height: 200px;
+    height: 120px;
+    .hamburger{
+        margin-left: 80%;
+    }
 nav{
 .form__inputnav{display: none;}
 .listaBarra{
     gap: 15px;
     font-size: 30px;
 }
-.lupa{
-    display: block;
-    width: 40px;
-    
-}
-.lupa:hover{
-    width: 60px;
-}}}
+
+}}
 main{
     
 .imglistas{
@@ -55,8 +51,9 @@ main{
         }
     }
 }
-
-
+.sectionpelicula{margin: 35px;}
+.video{iframe{
+    height: 400px;}}
 
 
 

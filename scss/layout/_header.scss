@@ -2,35 +2,44 @@ header{
     display: flex;
     background-color: black;
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.664);
-    justify-content: space-between;
+    a .titulo{
+        color: white;
+        
+    }
+
+    .hamburger{
+        display: none;
+        height: fit-content;
+        cursor: pointer;
+        align-self: center;
+        margin-right: 20px;
+        
+    }
+
     .titulo{
         font-size: 80px;
         padding: 15px;
         box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.664);
         background-color: $color-principal;
         display: flex ;
+        position: absolute;
+        z-index: 2;
+        border-radius: 5px;
     }
-    .titulo1{
-        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.664);
-        background-color: $color-principal;
-        display: flex ;
-        font-size: 80px;
-        padding: 15px;
-        color: white;
-        outline: none;
-        text-decoration: none;
-    }
-    .navmobile{
-        display: none;
-    }
+
     nav{
         font-size: 25px;
         display: flex;
         gap: 20px;
         padding: 40px;
+        justify-content: end;
         align-items: center;
+        width: 100%;
         height: 100%;
+        position: relative;
+        z-index: 1;
         .form__submitnav{
+            
             background: $color-principal ;
             color: white;
             font-family: 'Bebas Neue', cursive;
@@ -42,6 +51,7 @@ header{
             margin-left: 20px;
         }
         .form__inputnav{
+            
             background: $color-principal ;
             color: white;
             font-family: 'Bebas Neue', cursive;

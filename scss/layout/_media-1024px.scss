@@ -1,14 +1,45 @@
 @media(max-width:1024px){
 header{
     height: 95px;
+    
 
 .titulo{
     font-size: 50px;
+    
 }
-.titulo1{
-    font-size: 50px;
+.hamburger {display: block;
+margin-left: 90%;
+    
 }
+#nav_check:checked ~ nav{
+    left: 0;}
 nav{
+    position: absolute;
+    left: -300px;
+    top: 0;
+    z-index: 999px;
+    height: 100vh;
+    transition: 0.2s;
+    background-color: black;
+    box-shadow: 2px 0 20px rgba(0, 0, 0, 0.555);
+    justify-content: space-between;
+    width: 300px;
+    .lupa{
+        display: block;
+        width: 40px;
+    }
+    form{display: none;}
+    .listaBarra{
+        display: block;
+    }
+    .listaBarra li{
+        padding: 0 30px;
+        margin-top: 40px;
+    }
+    
+    
+    
+
 .form__inputnav{
     width: 200px;
 }
@@ -93,7 +124,7 @@ main{
 
 .ayudamain{
     .rickimg{
-        width: 200px;
+        width: 180px;
         
     }
 }

@@ -1,9 +1,8 @@
 @media (max-width:320px) {
-    header{
-    .headermobile{
-    gap: 10px;
-    }}
+
+
     main{
+
     .imglistas2{
         width: 80px;
     }
@@ -16,6 +15,7 @@
     }}
     .estrenos .imglistas{
         width: 80px;
+        
     }}
 
     .ayudamain{
@@ -27,7 +27,8 @@
         }
     }
 
-
+    .video{iframe{
+        width: 255px;}}
 
 
 }
