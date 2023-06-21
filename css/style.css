@@ -612,16 +612,17 @@ ul.footer {
     .ayudamain .form1 {
       width: 400px;
       height: 700px; }
+    .ayudamain .tituloayuda {
+      font-size: 20px; }
   .sectionpelicula {
     padding-top: 30px;
     padding: 20px; }
     .sectionpelicula h2 {
       font-size: 30px; }
   .video iframe {
-    height: 300px; } }
-
-.parrafopeli {
-  font-size: 20px; }
+    height: 300px; }
+  .parrafopeli {
+    font-size: 20px; } }
 
 @media (max-width: 375px) {
   main .imglistas2 {
@@ -633,8 +634,6 @@ ul.footer {
       margin-top: 40px; }
   main .estrenos .imglistas, main .tendencias .imglistas, main .clasicos .imglistas, main .proximosEstrenos .imglistas {
     width: 80px; }
-  .ayudamain .tituloayuda {
-    font-size: 25px; }
   .ayudamain .form1 {
     width: 280px; }
     .ayudamain .form1 .labelayuda {
@@ -642,4 +641,6 @@ ul.footer {
     .ayudamain .form1 .ayudaboton {
       padding: 0; }
   .video iframe {
-    width: 255px; } }
+    width: 255px; }
+  .sectionpelicula {
+    margin: 15px; } }
