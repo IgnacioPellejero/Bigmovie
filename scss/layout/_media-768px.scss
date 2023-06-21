@@ -1,10 +1,11 @@
 @media(max-width:768px){
 header{
-    align-items: center;
+    
     height: 120px;
     .hamburger{
         margin-left: 80%;
     }
+    .titulo{padding-top: 20px;}
 nav{
 .form__inputnav{display: none;}
 .listaBarra{

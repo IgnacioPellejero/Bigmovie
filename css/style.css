@@ -463,10 +463,11 @@ ul.footer {
 
 @media (max-width: 768px) {
   header {
-    align-items: center;
     height: 120px; }
     header .hamburger {
       margin-left: 80%; }
+    header .titulo {
+      padding-top: 20px; }
     header nav .form__inputnav {
       display: none; }
     header nav .listaBarra {
@@ -623,10 +624,6 @@ ul.footer {
   font-size: 20px; }
 
 @media (max-width: 375px) {
-  .sectionpelicula {
-    margin: 15px; } }
-
-@media (max-width: 320px) {
   main .imglistas2 {
     width: 80px; }
   main .pelisRecomendados {
